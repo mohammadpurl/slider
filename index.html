@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>window._wordtune_extension_installed = true;</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="images/img1.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Enjoy the finest coffe drinks.</span>
+                    <h2>Enjoy Our Exclusive <br />
+                    Coffe and Cocktails
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/img2.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Enjoy the finest coffe drinks.</span>
+                    <h2>Enjoy Our Exclusive <br />
+                    Coffe and Cocktails
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/img3.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Enjoy the finest coffe drinks.</span>
+                    <h2>Enjoy Our Exclusive <br />
+                    Coffe and Cocktails
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination "></div>
+    </section>
+     <!-- Swiper JS -->
+     <script src="js/swiper-bundle.min.js"></script>
+     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            // type: "fraction",
+          },
+          autoplay:{
+            delay: 3500,
+            disableOnInteraction:false
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          effect: "creative",
+          creativeEffect: {
+            prev:{
+                shadow: true,
+                translate: [0,0-400],
+
+            },
+            next: {
+                translate: ["100%",0,0],
+            }
+          }
+        });
+      </script>
+</body>
+</html>
