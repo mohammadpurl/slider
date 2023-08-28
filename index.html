@@ -11,38 +11,82 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+     <!-- CSS Tab-->
+     <link rel="stylesheet" href="css/styletab.css">
 </head>
 <body>
     <section class="main swiper mySwiper">
         <div class="wrapper swiper-wrapper">
             <div class="slide swiper-slide">
-                <img src="images/img1.jpg" alt="" class="image">
+                <img src="images/chinies.jpg" alt="" class="image">
                 <div class="image-data">
                     <span class="text">Enjoy the finest coffe drinks.</span>
-                    <h2>Enjoy Our Exclusive <br />
-                    Coffe and Cocktails
+                    <h2>
+                        <a class="homepage-feature-title" href="https://carnegieendowment.org/2023/07/20/ukraine-s-delicate-balancing-act-with-china-pub-90237">Ukraine’s Delicate Balancing Act With China</a>
                     </h2>
-                    <a href="#" class="button">About Us</a>
+                    <div class="author">
+                        <ul>
+                            <li>Gillian Hadfield</li>
+                            <li>, 
+                                <a href="https://carnegieendowment.org/experts/2135">Mariano-Florentino (Tino) Cuéllar</a>
+                            </li>
+                            <li>, Tim O’Reilly</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="slide swiper-slide">
-                <img src="images/img2.jpg" alt="" class="image">
+                <img src="images/arab.jpg" alt="" class="image">
                 <div class="image-data">
                     <span class="text">Enjoy the finest coffe drinks.</span>
-                    <h2>Enjoy Our Exclusive <br />
-                    Coffe and Cocktails
+                    <h2>
+                        <a class="homepage-feature-title" href="https://carnegieendowment.org/2023/08/01/how-saudi-arabia-bent-china-to-its-technoscientific-ambitions-pub-90301">How Saudi Arabia Bent China to Its Technoscientific Ambitions</a>
                     </h2>
-                    <a href="#" class="button">About Us</a>
+                    <div class="author">
+                        <ul>
+                            <li>Mohammed Al-Sudairi</li>
+                            <li>, Steven Jiawei Hai</li>
+                            <li>, Kameal Alahmad</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
             <div class="slide swiper-slide">
-                <img src="images/img3.jpg" alt="" class="image">
+                <img src="images/ai.jpg" alt="" class="image">
                 <div class="image-data">
-                    <span class="text">Enjoy the finest coffe drinks.</span>
-                    <h2>Enjoy Our Exclusive <br />
-                    Coffe and Cocktails
+                    <span class="text">Technology</span>
+                    <h2>
+                        <a class="homepage-feature-title" href="https://carnegieendowment.org/2023/07/12/it-s-time-to-create-national-registry-for-large-ai-models-pub-90180">It’s Time to Create a National Registry for Large AI Models</a>
                     </h2>
-                    <a href="#" class="button">About Us</a>
+                    <div class="author">
+                        <ul>
+                            <li>Gillian Hadfield</li>
+                            <li>, 
+                                <a href="https://carnegieendowment.org/experts/2135">Mariano-Florentino (Tino) Cuéllar</a>
+                            </li>
+                            <li>, Tim O’Reilly</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/6.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">AI</span>
+                    <h2>
+                        <a class="homepage-feature-title" href="https://carnegieendowment.org/2023/07/10/china-s-ai-regulations-and-how-they-get-made-pub-90117">China’s AI Regulations and How They Get Made</a>
+                    </h2>
+                    <div class="author">
+                        <ul>
+                            <li>
+                                <a href="https://carnegieendowment.org/experts/2116">Matt Sheehan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -50,6 +94,10 @@
         <div class="swiper-button-prev nav-btn"></div>
         <div class="swiper-pagination "></div>
     </section>
+    <section class="tabCOntainer">
+
+    </section>
+
      <!-- Swiper JS -->
      <script src="js/swiper-bundle.min.js"></script>
      <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
@@ -64,7 +112,7 @@
             // type: "fraction",
           },
           autoplay:{
-            delay: 3500,
+            delay: 5500,
             disableOnInteraction:false
           },
           navigation: {
@@ -75,11 +123,11 @@
           creativeEffect: {
             prev:{
                 shadow: true,
-                translate: [0,0-400],
+                translate: [0,0-600],
 
             },
             next: {
-                translate: ["100%",0,0],
+                translate: ["100%",0,1],
             }
           }
         });
