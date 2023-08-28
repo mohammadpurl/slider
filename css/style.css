@@ -226,6 +226,9 @@ a.button:hover {
         left: 5vw;
         width: 90vw;
     }
+    .main {
+        height: 250px;
+    }
 }
 /* @media(max-width:600px) {
     .nav-btn{
