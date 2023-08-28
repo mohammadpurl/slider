@@ -116,22 +116,9 @@
 .author ul li a {
     color: #6e6e71;
     text-decoration: none;
+    font-size: 17px;
 }
-a.button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
-    color: #333;
-    text-decoration: none;
-    background: black;
-    margin-top: 25px;
-    transition: all 0.3s ease;
-}
-a.button:hover {
-    color: #fff;
-    background-color: #C87E4F;
-    cursor: pointer;
-}
+
 /* swiper button css */
 .nav-btn {
     height: 50px;
@@ -179,7 +166,7 @@ a.button:hover {
     width: 100%;
     height: 50px;
 } */
-@media(max-width:900px) {
+@media(max-width:950px) {
 
     .swiper-button-next{
         right: 20px;
@@ -191,7 +178,7 @@ a.button:hover {
         font-size: 12px;
     }
     .image-data  h2 {
-        font-size: 30px;
+        font-size: 25px;
        
     
     }
@@ -204,6 +191,10 @@ a.button:hover {
         background: #fff;
         margin-top: 13px;
         transition: all 0.3s ease;
+    }
+    .slide .image-data {
+        left: 5vw;
+        width: 70vw;
     }
 }
 @media(max-width:768px) {
@@ -218,8 +209,8 @@ a.button:hover {
         font-size: 10px;      
     
     }
-    .image-data  h2 {
-        font-size: 30px;
+    .image-data h2 > a {
+        font-size: 16px;
     
     }
     .slide .image-data {
@@ -228,6 +219,20 @@ a.button:hover {
     }
     .main {
         height: 250px;
+    }
+    .author ul li, 
+    .author ul li a {
+        color: #6e6e71;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .image-data  span.text,
+    .image-data  h2
+     {
+        margin-bottom: 5px;
+    }
+    .slide .image-data {
+        padding: 10px 22px 15px;
     }
 }
 /* @media(max-width:600px) {
